@@ -1,0 +1,102 @@
+/* Mountpoint */
+.wpa-mount { position: relative; z-index: 9999; }
+.wpa-mount--top { position: sticky; top: 0; }
+
+/* Banner wrapper */
+.wpa-banner-wrap { width: 100%; background: #dc2626; }
+
+/* Banner */
+.wpa-banner { 
+
+  color: #fff; 
+   min-height: 50px;
+}
+.wpa-banner__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  min-height: 48px;
+}
+.wpa-banner__content { 
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  min-width: 0;
+}
+.wpa-banner__title { 
+  font-weight: 600; 
+  font-size: 16px; 
+  line-height: 1.4;
+  color: #fff;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+.wpa-banner__title:hover {
+  opacity: 0.9;
+}
+.wpa-banner__title--clickable {
+  cursor: pointer;
+}
+.wpa-banner__button {
+  background: #fff;
+  color: #dc2626;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+.wpa-banner__button:hover {
+  background: #f3f4f6;
+  transform: translateY(-1px);
+}
+.wpa-banner__timer { 
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-variant-numeric: tabular-nums; 
+  font-weight: 600;
+  font-size: 14px;
+}
+.wpa-banner__timer-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 40px;
+}
+.wpa-banner__timer-value {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+}
+.wpa-banner__timer-label {
+  font-size: 12px;
+  opacity: 0.9;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Admin */
+.wpa-deadline-admin { }
+.wpa-deadline-admin--empty { color: #999; }
+
+/* Meta box */
+.wpa-meta { }
+.wpa-meta__row { margin: 0 0 8px; }
+.wpa-meta__label { display: inline-block; margin-bottom: 4px; }
+.wpa-meta__input { width: 100%; }
+.wpa-meta__input--datetime { }
+.wpa-meta__hint { color: #555; font-size: 12px; }
+@media (min-width: 768px) {
+  .wpa-banner__content { grid-column: 1 / 1; }
+}
