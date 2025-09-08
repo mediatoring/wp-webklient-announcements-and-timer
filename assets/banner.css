@@ -7,7 +7,6 @@
 
 /* Banner */
 .wpa-banner { 
-
   color: #fff; 
    min-height: 50px;
 }
@@ -48,7 +47,7 @@
   color: #dc2626;
   border: none;
   padding: 8px 16px;
-  border-radius: 4px;
+  border-radius: 50px;
   font-weight: 600;
   font-size: 14px;
   text-decoration: none;
