@@ -5,6 +5,10 @@
 /* Banner wrapper */
 .wpa-banner-wrap { width: 100%; background: #dc2626; }
 
+/* Multiple banners spacing */
+.wpa-banner + .wpa-banner { margin-top: 8px; }
+
+
 /* Banner */
 .wpa-banner { 
   color: #fff; 
@@ -45,19 +49,29 @@
 .wpa-banner__button {
   background: #fff;
   color: #dc2626;
-  border: none;
-  padding: 8px 16px;
-  border-radius: 50px;
-  font-weight: 600;
+  border: 2px solid #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 700;
   font-size: 14px;
   text-decoration: none;
   display: inline-block;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
   white-space: nowrap;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 .wpa-banner__button:hover {
-  background: #f3f4f6;
-  transform: translateY(-1px);
+  background: #f8f9fa;
+  color: #b91c1c;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  border-color: #f8f9fa;
+}
+.wpa-banner__button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 .wpa-banner__timer { 
   display: flex;
